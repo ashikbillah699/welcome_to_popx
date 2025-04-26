@@ -8,8 +8,6 @@ export const AuthContext = createContext(null)
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
-    console.log(user)
-
     const createSignUp = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
@@ -25,7 +23,6 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
-            console.log(currentUser)
         })
         return () =>{
             return unSubscribe();

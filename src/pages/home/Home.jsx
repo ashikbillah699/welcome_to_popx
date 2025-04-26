@@ -10,7 +10,6 @@ const Home = () => {
                 <Link to='/signUp'><button className='border w-full py-2 bg-[#5031be] rounded-lg text-white text-sm' type="button">Create Account</button></Link>
                 <Link to='/login'><button className='border w-full py-2 bg-gray-300 font-semibold rounded-lg mt-2 text-sm' type="button">Already Registered? Login</button> </Link>
             </div>
-
         </div>
     );
 };

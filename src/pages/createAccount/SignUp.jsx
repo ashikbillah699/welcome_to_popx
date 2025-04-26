@@ -25,19 +25,15 @@ const SignUp = () => {
                         navigate('/accountSettion');
                     }
                 })
-
         }
         catch (err) {
             alert(err.message)
         }
-
-
     }
     return (
         <div className="min-h-screen flex justify-center ">
             <div className="w-full bg-gray-100 p-4 rounded">
                 <h2 className="text-2xl font-bold mb-6 text-left">Create your <br /> PopX account</h2>
-
                 <form onSubmit={handleSignUp} className="space-y-4">
                     <div className='relative'>
                         <label className="text-sm absolute bg-gray-100 left-4 -top-2 text-blue-700 block">Full Name <span className="text-blue-700">*</span></label>
@@ -68,7 +64,6 @@ const SignUp = () => {
                         <label className="text-sm absolute bg-gray-100 left-4 -top-2 text-blue-700 block font-medium ">Company name</label>
                         <input type="text" name='companyName' placeholder="Marry Doe" className="text-sm mt-1 w-full px-4 py-1 border bg-gray-100 border-gray-300 rounded-md focus:outline-none focus:ring-2 text-blue-700" required />
                     </div>
-
                     <div className=' text-start'>
                         <label className="block text-xs font-medium text-gray-700 mb-2">Are you an Agency? <span className="text-blue-700">*</span></label>
                         <div className="flex gap-6">
@@ -82,15 +77,11 @@ const SignUp = () => {
                             </label>
                         </div>
                     </div>
-
-                    {/* <Link to='/accountSettion'> */}
                     <div className="flex items-end pt-32">
                         <button type="submit" className="w-full bg-[#5031be] text-sm hover:bg-blue-700 text-white font-medium py-2 rounded-md transition duration-200">
-                        Create Account
-                    </button>
+                            Create Account
+                        </button>
                     </div>
-                    
-                    {/* </Link> */}
                 </form>
             </div>
         </div>

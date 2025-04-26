@@ -10,7 +10,6 @@ const Login = () => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
-        console.log(email, password)
 
         createLogin(email, password)
             .then(result => {
@@ -19,7 +18,6 @@ const Login = () => {
                     navigate('/accountSettion');
                 }
             })
-
     }
 
     return (

@@ -9,7 +9,6 @@ const AccountSetting = () => {
             <div className=' bg-white text-start py-4 pl-2'>
                 <h2 className="text-gray-800 font-semibold">Account Settings</h2>
             </div>
-
             <div className="flex flex-col text-start p-4">
                 <div className='flex gap-4'>
                     <div className="relative">
